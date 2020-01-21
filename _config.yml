@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
-keywords:
+title: 阮旭松的博客
+subtitle: "个人博客"
+description: "基于hexo的博客"
+keywords: "hexo,阮旭松,博客,three.js"
 author: Ruan XuSong
 language: zh-CN
 timezone: ""
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.ruanxusong.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -63,8 +63,12 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  技术: tech
+  生活: life
 tag_map:
-
+  three.js: three
+  react: react
+  心情: motion
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
