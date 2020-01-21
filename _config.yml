@@ -6,7 +6,7 @@
 title: 阮旭松的博客
 subtitle: "个人博客"
 description: "基于hexo的博客"
-keywords: "hexo,阮旭松,博客,three.js"
+keywords: "hexo,阮旭松,博客,three.js,react,react-native,前端"
 author: Ruan XuSong
 language: zh-CN
 timezone: ""
@@ -44,12 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ""
-  wrap: true
-  hljs: false
+  enable: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
