@@ -3,7 +3,7 @@ title: react-native-swipe-list-view
 cover: /covers/rnSwipeListView.jpg
 date: 2020-01-21 14:21:58
 category: 技术
-tags: RN
+tags: react-native
 excerpt: react-native-swipe-list-view的使用和注意事项
 ---
 
