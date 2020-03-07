@@ -4,7 +4,7 @@ title: 正则校验
 date: 2020-01-13 14:26:05
 cover: /covers/regs.jpg
 category: 技术
-tags: 正则
+tags: [javascript,正则]
 excerpt: 正则校验字符串格式化的问题
 ---
 
