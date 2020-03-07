@@ -3,7 +3,7 @@ title: Symbol的应用
 date: 2020-01-13 17:13:22
 category: 技术
 cover: /covers/Symbol.jpg
-tags: ES6
+tags: [ES6,javascript]
 excerpt: Symbol的应用和解释
 ---
 

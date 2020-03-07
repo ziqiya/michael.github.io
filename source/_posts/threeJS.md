@@ -3,7 +3,7 @@ title: 关于 threeJS
 date: 2019-12-29 21:40:15
 cover: /covers/three.jpg
 category: 技术
-tags: three.js
+tags: [three.js,javascript]
 excerpt: three.js 中遇到的一些问题的解决方法
 ---
 

@@ -60,14 +60,15 @@ interface CustomImagePickerProps {
   /** 成功事件回调,返回文件路径 */
   onSuccess?: (fileUrl: string) => void;
 }
+
 const CustomImagePicker: React.FC<CustomImagePickerProps> = props => {
   const { imgSource = require('@/assets/pic_empty.png'), title = '', imgConfig, onCancel, onFailed, onSuccess } = props;
   const imagePickerOptions = { ...initialImageOptions, ...imgConfig };
   const [currentImgSource, setCurrentImgSource] = useState();
 
-return(
-  const [currentImgSource, setCurrentImgSource] = useState();
-   <TouchableOpacity onPress={handleUploadImage}>
+  return(
+    const [currentImgSource, setCurrentImgSource] = useState();
+    <TouchableOpacity onPress={handleUploadImage}>
       <ImageBackground source={currentImgSource || imgSource} style={styles.backgroundImg}>
         {!currentImgSource && (
           <>
@@ -77,8 +78,8 @@ return(
         )}
       </ImageBackground>
     </TouchableOpacity>
-    )
-  }
+  )
+}
 
 // 样式部分
 const styles = StyleSheet.create({
@@ -201,13 +202,13 @@ import RNFetchBlob from 'rn-fetch-blob';
 &emsp;&emsp;最后是 IOS 端的权限兼容，因为 ios 的 APP 会限制照片，照相，存照片的权限，如果什么都不做就会报`Thread x: signal SIGABRT`的错误，导致 APP 闪退卡死。  
 &emsp;&emsp;所以需要在项目的`ios/项目名称`文件夹中找到`Info.plist`文件，在最后加上三个 `key` 和对应的信息 `string`:
 
-```javascript
-  <key>NSPhotoLibraryAddUsageDescription</key>
-	<string>请允许APP保存图片到相册</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>请允许APP访问您的相册</string>
-	<key>NSCameraUsageDescription</key>
-	<string>请允许APP访问您的相机</string>
+```java
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>请允许APP保存图片到相册</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>请允许APP访问您的相册</string>
+<key>NSCameraUsageDescription</key>
+<string>请允许APP访问您的相机</string>
 ```
 
 问题解决完以后，最后实现效果如下:
