@@ -17,7 +17,7 @@ excerpt: 关于微信小程序登录的新方法探索
 
 ## 新的想法
 
-&emsp;&emsp;以下为我们的微信小程序登录流程：
+&emsp;&emsp;以下为我们的微信小程序登录流程测试：
 
 ![我的微信登录](/images/posts/weixinLogin/myLogin.jpg)
 
