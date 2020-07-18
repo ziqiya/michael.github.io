@@ -2,7 +2,7 @@
 title: myElement
 cover: /covers/myElement.jpg
 date: 2020-01-21 15:41:38
-category: 技术
+category: 前端
 tags: [javascript,油猴]
 excerpt: 油猴脚本-我的元素
 ---

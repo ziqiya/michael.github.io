@@ -2,7 +2,7 @@
 title: webSocket
 cover: /covers/webSocket.jpg
 date: 2020-04-04 17:32:39
-category: 技术
+category: 前端
 tags: [webSocket, 后端]
 excerpt: webSocket 简介及其实践
 ---

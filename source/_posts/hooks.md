@@ -2,7 +2,7 @@
 title: React Hooks
 cover: /covers/hooks.jpg
 date: 2020-03-07 15:12:56
-category: 技术
+category: 前端
 tags: [react,hooks]
 excerpt: React的新特性hooks的介绍及常用函数介绍
 ---

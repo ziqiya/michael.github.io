@@ -2,7 +2,7 @@
 title: cordova
 cover: /covers/cordova.jpg
 date: 2020-02-03 19:03:28
-category: 技术
+category: 前端
 tags: cordova
 excerpt: cordova环境搭建的问题总结与解决方法
 ---

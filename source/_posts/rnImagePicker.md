@@ -2,7 +2,7 @@
 title: react-native-image-picker
 cover: /covers/rnImagePicker.jpg
 date: 2020-01-23 11:16:32
-category: 技术
+category: 移动端
 tags: react-native
 excerpt: react-native-image-picker实战，实现图片上传
 ---

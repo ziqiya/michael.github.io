@@ -5,7 +5,7 @@
 # Site
 title: 阮旭松的博客
 subtitle: "个人博客"
-description: "基于hexo的博客"
+description: "基于hexo的前端博客"
 keywords: "hexo,阮旭松,博客,three.js,react,react-native,前端"
 author: Ruan XuSong
 language: zh-CN
@@ -60,10 +60,27 @@ default_category: uncategorized
 category_map:
   技术: tech
   生活: life
+  前端: fontEnd
+  移动端: mobile
 tag_map:
   three.js: three
   react: react
   心情: motion
+  3D技术: 3dTech
+  可视化: visualized
+  项目管理: projectManage
+  图表: graph
+  react-native: reactNative
+  正则: regs
+  cordova: cordova
+  javascript: javascript
+  油猴: oilMonkey
+  ES6: es6
+  hooks: hooks
+  微信小程序: weChat
+  Taro: taro
+  后端: backEnd
+  webSocket: webSocket
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
@@ -97,7 +114,9 @@ theme: hexo-theme-nexmoe
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: "git"
-  repo: https://github.com/RuanXuSong/RuanXuSong.github.io.git
+  repo:
+    - https://github.com/RuanXuSong/RuanXuSong.github.io.git
+    - https://e.coding.net/ruanxusong/ruanxusong.coding.me.git
   branch: master
 
 live2d:
