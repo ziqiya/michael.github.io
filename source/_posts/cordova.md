@@ -109,3 +109,32 @@ cordova platform add ios@latest
 - Q：如果在执行 taro 项目打包的时候遇到这个问题怎么办：
   ![bug-img](/images/posts/cordova/taro-bug.jpg)  
   A：这个问题可能是 taro 版本的问题，因为低版本 taro 不支持箭头函数写组件内的函数，可以把`package.json`中更改`taro`版本到`1.3.12`，再删除`package-lock.json`,重新`npm install`装包。如果还没有解决，那可能是因为本地的一些 node 依赖与`taro`不兼容，需要撤销本地的修改后再重装依赖。
+
+## 四、补充注意
+
+### 补充注意
+
+1、在安装插件或其他的时候遇到以下问题：
+```
+Could not resolve all files for configuration ':classpath'.
+Connect to maven.google.com:443 [maven.google.com/172.217.160.110] failed: Operation timed out
+```
+可以修改操作如下：
+![bug-img](/images/posts/cordova/md_28.jpg)  
+```
+// 替换代码如下
+ maven { url 'https://maven.aliyun.com/repository/google' }
+ maven { url 'https://maven.aliyun.com/repository/jcenter' }
+```
+
+2、如果出现 ios 支付无法使用的问题，需要把 ios 的 platform remove 掉，再 add，add的时候如果报错需要重装 cordova 版本为7.1.0。这是因为插件 plugins 需要更新，remove 再 add platform 可以自动重装插件。
+
+3、如果遇到插件重装报错问题，可以先把 node_modules 里后面带箭头的文件都删掉再重装插件否则会报错。
+
+4、如果遇到以下问题：
+```
+Error: Unable to graft xml at selector "/manifest/application/meta-data[@android:name='JPUSH_CHANNEL']" from "/Users/michael/Work/leishu/nengxin/ebc-mobile/platforms/android/AndroidManifest.xml" during config install
+```
+解决方法:把 config.xml 里的	JPUSH_CHANNEL 对应项改掉，参考：<a href="https://tracker.moodle.org/browse/MOBILE-3283">解决方法</a> 
+
+5、打包的安卓如果无法请求数据和图片，platforms 下的 android 文件夹直接用已有线上仓库的。

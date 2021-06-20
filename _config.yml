@@ -74,13 +74,14 @@ tag_map:
   正则: regs
   cordova: cordova
   javascript: javascript
-  油猴: oilMonkey
+  css: css
   ES6: es6
   hooks: hooks
   微信小程序: weChat
   Taro: taro
   后端: backEnd
   webSocket: webSocket
+  名人: celebrity
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
@@ -115,7 +116,7 @@ theme: hexo-theme-nexmoe
 deploy:
   type: "git"
   repo:
-    - https://github.com/RuanXuSong/RuanXuSong.github.io.git
+    - git@github.com:RuanXuSong/RuanXuSong.github.io.git
     - https://e.coding.net/ruanxusong/ruanxusong.coding.me.git
   branch: master
 
